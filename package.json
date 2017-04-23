@@ -5,6 +5,10 @@
   "description": "This a ticketing software for support teams.",
   "author": "Michael Wanyoike",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brandiqa/helpdesk.git"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
