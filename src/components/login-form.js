@@ -44,7 +44,7 @@ class LoginForm extends Component {
 
     return (
       <div>
-        <Header color={brand} as='h2'>
+        <Header color={brand} as='h3'>
           <Icon name="lock"/>Sign in to your Account
         </Header>
         <Form onSubmit={form.onSubmit}>

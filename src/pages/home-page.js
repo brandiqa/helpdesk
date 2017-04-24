@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Segment, Divider } from 'semantic-ui-react';
+import { Grid, Segment, Divider, Header } from 'semantic-ui-react';
 import SubmitTicketForm from '../components/submit-ticket-form';
 import LoginForm from '../components/login-form';
 
@@ -7,7 +7,7 @@ class HomePage extends Component {
   render() {
     return (
       <div style={{marginTop:'4vh'}}>
-        <h3 className="text-center">Providing context-aware ticketing software to help companies operate efficiently.</h3>
+        <Header textAlign='center'>Providing context-aware ticketing software to help support departments operate efficiently.</Header>
         <Grid container style={{marginTop:'20px'}}>
           <Grid.Column width={6}>
             <Segment>

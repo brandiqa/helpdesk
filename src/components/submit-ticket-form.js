@@ -59,8 +59,8 @@ class SubmitTicketForm extends Component {
 
     return (
       <div>
-        <Header color={brand} as='h2'>
-          <Icon name="write"/> Submit New Ticket
+        <Header color={brand} as='h3'>
+          <Icon name="write"/> Report an Issue / Ask a Question
         </Header>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('name')} />
