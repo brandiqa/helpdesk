@@ -5,6 +5,7 @@ import { Form, Button } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
 import InputField from './input-field';
 import TextAreaField from './textarea-field';
+import { brand } from '../styles';
 
 const fields = {
   name:{
@@ -64,7 +65,7 @@ class SubmitTicketForm extends Component {
           <InputField field={form.$('email')} />
           <InputField field={form.$('subject')} />
           <TextAreaField field={form.$('description')} />
-          <Button primary disabled={form.isPristine}>Post Ticket</Button>
+          <Button color={brand} disabled={form.isPristine}>Post Ticket</Button>
         </Form>
       </div>
     );

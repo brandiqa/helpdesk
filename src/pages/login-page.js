@@ -5,7 +5,7 @@ import LoginForm from '../components/login-form';
 class LoginPage extends Component {
   render() {
     return (
-      <Grid centered verticalAlign="middle" columns={3} container>
+      <Grid centered columns={3} container style={{marginTop:'4vh'}}>
         <Grid.Column>
           <LoginForm />
         </Grid.Column>

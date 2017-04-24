@@ -4,6 +4,7 @@ import MobxReactForm from 'mobx-react-form';
 import { Form, Button } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
 import InputField from './input-field';
+import { brand } from '../styles';
 
 const fields = {
   email: {
@@ -47,7 +48,7 @@ class LoginForm extends Component {
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />
-          <Button color="teal" disabled={form.isPristine}>Sign In</Button>
+          <Button color={brand} disabled={form.isPristine}>Sign In</Button>
         </Form>
       </div>
     );
