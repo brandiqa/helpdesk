@@ -47,7 +47,7 @@ class LoginForm extends Component {
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />
-          <Button primary disabled={form.isPristine}>Sign In</Button>
+          <Button color="teal" disabled={form.isPristine}>Sign In</Button>
         </Form>
       </div>
     );
