@@ -5,7 +5,7 @@ import HomePage from './pages/home-page';
 import SubmitTicketPage from './pages/submit-ticket-page';
 import LoginPage from './pages/login-page';
 import { brand } from './styles';
-const logo = 'anchor';
+const logo = 'laptop';
 
 class App extends Component {
 
