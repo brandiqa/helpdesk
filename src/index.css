@@ -15,6 +15,10 @@
 /**
 ** Site-wide Styling
 **/
+.menu {
+  border-radius: 0 !important;
+}
+
 .red {
   color: #D01919;
 }
