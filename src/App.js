@@ -5,7 +5,7 @@ import HomePage from './pages/home-page';
 import SubmitTicketPage from './pages/submit-ticket-page';
 import LoginPage from './pages/login-page';
 import { brand } from './styles';
-
+const logo = 'anchor';
 
 class App extends Component {
 
@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div>
         <Menu pointing style={{marginBottom:'0'}}>
-          <Menu.Item header><Icon name='bug' /> HelpDesk</Menu.Item>
+          <Menu.Item header><Icon name={logo} /> HelpDesk</Menu.Item>
           <NavLink className={item} activeClassName="active" exact to="/">
             <Icon name='home' /> Home
           </NavLink>
@@ -31,7 +31,7 @@ class App extends Component {
         </Menu>
         <Segment color={brand} style={this.bannerStyle} inverted>
           <Header as='h2' icon textAlign='center'>
-            <Icon name='anchor' circular/>
+            <Icon name={logo} />
             <Header.Content>
               Help Desk
             </Header.Content>
