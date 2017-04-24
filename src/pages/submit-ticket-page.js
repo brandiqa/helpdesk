@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { Grid } from 'semantic-ui-react';
+import SubmitTicketForm from '../components/submit-ticket-form';
 
 class SubmitTicketPage extends Component {
   render() {
     return (
-      <h1>Submit a Ticket</h1>
+      <Grid centered verticalAlign="middle" columns={3} container>
+        <Grid.Column>
+          <SubmitTicketForm/>
+        </Grid.Column>
+      </Grid>
     );
   }
 }
