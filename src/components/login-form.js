@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import MobxReactForm from 'mobx-react-form';
-import { Form, Button } from 'semantic-ui-react';
+import { Form, Button, Header, Icon } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
 import InputField from './input-field';
-import { brand } from '../styles';
+import { brand, primary } from '../styles';
 
 const fields = {
   email: {
@@ -44,11 +44,14 @@ class LoginForm extends Component {
 
     return (
       <div>
-        <h2>Sign in to your Account</h2>
+        <Header color={brand}><Icon name="lock"/>Sign in to your Account</Header>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />
-          <Button color={brand}>Sign In</Button>
+          <Button color={primary} icon labelPosition="left">
+            <Icon name="sign in"/>
+            Sign In
+          </Button>
         </Form>
       </div>
     );

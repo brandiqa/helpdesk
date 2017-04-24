@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import MobxReactForm from 'mobx-react-form';
-import { Form, Button } from 'semantic-ui-react';
+import { Form, Button, Header, Icon } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
 import InputField from './input-field';
 import TextAreaField from './textarea-field';
-import { brand } from '../styles';
+import { brand, primary } from '../styles';
 
 const fields = {
   name:{
@@ -59,13 +59,16 @@ class SubmitTicketForm extends Component {
 
     return (
       <div>
-        <h2>Submit New Ticket</h2>
+        <Header color={brand}><Icon name="write"/> Submit New Ticket</Header>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('name')} />
           <InputField field={form.$('email')} />
           <InputField field={form.$('subject')} />
           <TextAreaField field={form.$('description')} />
-          <Button color={brand}>Post Ticket</Button>
+          <Button color={primary} icon labelPosition="left">
+            <Icon name="send"/>
+            Post Ticket
+          </Button>
         </Form>
       </div>
     );
