@@ -44,7 +44,9 @@ class LoginForm extends Component {
 
     return (
       <div>
-        <Header color={brand}><Icon name="lock"/>Sign in to your Account</Header>
+        <Header color={brand} as='h2'>
+          <Icon name="lock"/>Sign in to your Account
+        </Header>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />

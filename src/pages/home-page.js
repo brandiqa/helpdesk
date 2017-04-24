@@ -9,17 +9,17 @@ class HomePage extends Component {
       <div style={{marginTop:'4vh'}}>
         <h3 className="text-center">Providing context-aware ticketing software to help companies operate efficiently.</h3>
         <Grid container style={{marginTop:'20px'}}>
-          <Grid.Column width={9}>
+          <Grid.Column width={6}>
             <Segment>
-              <SubmitTicketForm/>
+              <LoginForm/>
             </Segment>
           </Grid.Column>
           <Grid.Column>
             <Divider vertical>Or</Divider>
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column width={9}>
             <Segment>
-              <LoginForm/>
+              <SubmitTicketForm/>
             </Segment>
           </Grid.Column>
         </Grid>

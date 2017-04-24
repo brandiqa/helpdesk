@@ -30,7 +30,7 @@ class App extends Component {
           </NavLink>
         </Menu>
         <Segment color={brand} style={this.bannerStyle} inverted>
-          <Header as='h2' icon textAlign='center'>
+          <Header as='h2' icon textAlign='center' size='huge'>
             <Icon name={logo} />
             <Header.Content>
               Help Desk
