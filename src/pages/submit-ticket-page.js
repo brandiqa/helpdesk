@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 class SubmitTicketPage extends Component {
   render() {
-    <h1>Submit a Ticket</h1>
+    return (
+      <h1>Submit a Ticket</h1>
+    );
   }
 }
 
