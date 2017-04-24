@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
 import MobxReactForm from 'mobx-react-form';
 import { Form, Button } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
@@ -27,6 +28,7 @@ class MobxForm extends MobxReactForm {
   }
 }
 
+@observer
 class LoginForm extends Component {
 
   form = null;
