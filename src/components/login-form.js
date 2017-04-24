@@ -44,11 +44,11 @@ class LoginForm extends Component {
 
     return (
       <div>
-        <h1>Sign in to your Account</h1>
+        <h2>Sign in to your Account</h2>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />
-          <Button color={brand} disabled={form.isPristine}>Sign In</Button>
+          <Button color={brand}>Sign In</Button>
         </Form>
       </div>
     );

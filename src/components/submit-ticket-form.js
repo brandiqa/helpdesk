@@ -59,13 +59,13 @@ class SubmitTicketForm extends Component {
 
     return (
       <div>
-        <h1>Submit a New Ticket</h1>
+        <h2>Submit New Ticket</h2>
         <Form onSubmit={form.onSubmit}>
           <InputField field={form.$('name')} />
           <InputField field={form.$('email')} />
           <InputField field={form.$('subject')} />
           <TextAreaField field={form.$('description')} />
-          <Button color={brand} disabled={form.isPristine}>Post Ticket</Button>
+          <Button color={brand}>Post Ticket</Button>
         </Form>
       </div>
     );
