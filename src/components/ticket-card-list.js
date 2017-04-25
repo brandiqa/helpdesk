@@ -15,7 +15,7 @@ class TicketCardList extends Component {
     return (
       <div>
         <Menu style={{marginBottom:0, backgroundColor:'#F3F4F5'}}>
-          <NavLink className='item' to='/tickets'>
+          <NavLink className='item' to='/dashboard/tickets'>
             <Icon name='chevron left'/>
           </NavLink>
           <Menu.Item>

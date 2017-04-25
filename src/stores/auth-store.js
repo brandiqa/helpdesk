@@ -13,7 +13,7 @@ class AuthStore {
         this.isAuthenticated = true;
         this.loading = false;
       },
-      2000
+      1000
     );
   }
 
