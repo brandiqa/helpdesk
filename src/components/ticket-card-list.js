@@ -22,7 +22,7 @@ class TicketCardList extends Component {
             <Dropdown options={options} defaultValue='*'/>
           </Menu.Item>
         </Menu>
-        <Segment secondary style={{height:'95vh', marginTop:0}} className='right-inner-shadow'>
+        <Segment secondary style={{height:'90vh', marginTop:0}} className='right-inner-shadow'>
           <Card.Group>
             <TicketCard />
             <TicketCard selected={true}/>

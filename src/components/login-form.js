@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import MobxReactForm from 'mobx-react-form';
 import { Form, Button, Header, Icon } from 'semantic-ui-react';
 import validatorjs from 'validatorjs';
 import InputField from './input-field';
 import { brand, primary } from '../styles';
+import authStore from '../stores/auth-store';
 
 const fields = {
   email: {
@@ -12,20 +14,20 @@ const fields = {
     label: 'Email',
     placeholder: 'Email',
     type: 'email',
-    rules:'email|string|required'
+    rules:'email|string|false'
   },
   password: {
     name: 'password',
     label: 'Password',
     placeholder: 'Password',
     type: 'password',
-    rules:'string|required'
+    rules:'string|false'
   }
 }
 
 class MobxForm extends MobxReactForm {
   onSuccess(form) {
-    console.log('login')
+    authStore.login();
   }
 }
 
@@ -41,6 +43,13 @@ class LoginForm extends Component {
 
   render() {
     const form = this.form;
+    const dashboard = { pathname: '/dashboard/tickets' };
+
+    if (authStore.isAuthenticated) {
+      return (
+        <Redirect to={dashboard}/>
+      )
+    }
 
     return (
       <div>

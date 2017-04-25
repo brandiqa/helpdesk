@@ -15,7 +15,7 @@ class TicketPage extends Component {
             <Grid.Column width={3} style={{paddingRight:0}}>
               <Menu inverted color={brand}>
               </Menu>
-              <Segment basic style={{height:'90vh'}}>
+              <Segment basic style={{height:'88vh'}}>
                 <p>Contact Detail</p>
               </Segment>
             </Grid.Column>

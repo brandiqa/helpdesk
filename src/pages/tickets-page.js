@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Sidebar, Segment, Menu, Icon, Button, Input, Header } from 'semantic-ui-react'
 import TicketListMode from '../components/ticket-list-mode';
+import authStore from '../stores/auth-store';
 
 class TicketsPage extends Component {
   render() {
     return(
-      <Sidebar.Pushable as={Segment}>
+      <Sidebar.Pushable as={Segment} style={{height:'95vh'}}>
         <Sidebar as={Menu} width='thin' vertical inverted visible color='grey'>
           <Segment basic style={{marginBottom:0, paddingBottom:'2px'}}>
             <Header as='h3' icon textAlign='center' inverted style={{marginBottom:0}}>
@@ -40,7 +41,9 @@ class TicketsPage extends Component {
                 Logged in as Admin
               </Menu.Item>
               <Menu.Item>
-                <Button icon labelPosition='right' inverted><Icon name='sign out'/> Logout</Button>
+                <Button icon labelPosition='right' inverted onClick={() => authStore.logout()}>
+                  <Icon name='sign out'/> Logout
+                </Button>
               </Menu.Item>
             </Menu.Menu>
           </Menu>
