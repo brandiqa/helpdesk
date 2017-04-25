@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Segment, Menu }  from 'semantic-ui-react';
-import TicketList from '../components/ticket-list';
+import TicketCardList from '../components/ticket-card-list';
 import { brand } from '../styles';
 
 class TicketPage extends Component {
@@ -8,7 +8,7 @@ class TicketPage extends Component {
     return (
       <Grid>
         <Grid.Column width={2} style={{paddingRight:0}}>
-          <TicketList/>
+          <TicketCardList/>
         </Grid.Column>
         <Grid.Column width={14} style={{paddingLeft:0}}>
           <Grid divided>

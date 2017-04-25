@@ -10,7 +10,7 @@ const options = [
   {key:'closed',value:'closed',text:'Closed Tickets'},
 ]
 
-class TicketList extends Component {
+class TicketCardList extends Component {
   render() {
     return (
       <div>
@@ -34,4 +34,4 @@ class TicketList extends Component {
   }
 }
 
-export default TicketList;
+export default TicketCardList;
