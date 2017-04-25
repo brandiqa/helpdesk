@@ -44,7 +44,10 @@ class TicketsPage extends Component {
               </Menu.Item>
             </Menu.Menu>
           </Menu>
-          <Segment basic padded>
+          <Segment padded basic style={{marginTop:0}}>
+            <Segment vertical>
+              <h4><Icon name='star empty'/> All Tickets</h4>
+            </Segment>
             <TicketListMode/>
           </Segment>
         </Sidebar.Pusher>
