@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { Item } from 'semantic-ui-react';
+import TicketItem from './ticket-item';
 
 class TicketListMode extends Component {
   render() {
     return(
-      <div>
-        <p>list of tickets</p>
-      </div>
+      <Item.Group divided style={{width:'90vw'}}>
+        <TicketItem/>
+        <TicketItem/>
+        <TicketItem/>
+      </Item.Group>
     );
   }
 }
