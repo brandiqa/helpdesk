@@ -15,13 +15,13 @@ class App extends Component {
       <div>
         <Menu pointing style={{marginBottom:'0'}}>
           <Menu.Item header><Icon name={logo} /> HelpDesk</Menu.Item>
-          <NavLink className={item} activeClassName="active" to="/public" exact>
+          <NavLink className={item} activeClassName="active" to="/app" exact>
             <Icon name='home' /> Home
           </NavLink>
-          <NavLink className={item} activeClassName="active" to="/public/login">
+          <NavLink className={item} activeClassName="active" to="/app/login">
             <Icon name='user' /> Login
           </NavLink>
-          <NavLink className={item} activeClassName="active" to="/public/submit">
+          <NavLink className={item} activeClassName="active" to="/app/submit">
             <Icon name='ticket' /> Submit Ticket
           </NavLink>
         </Menu>
@@ -36,9 +36,9 @@ class App extends Component {
             </Header.Subheader>
           </Header>
         </Segment>
-        <Route path="/public" component={HomePage} exact/>
-        <Route path="/public/submit" component={SubmitTicketPage} />
-        <Route path="/public/login" component={LoginPage} />
+        <Route path="/app" component={HomePage} exact/>
+        <Route path="/app/submit" component={SubmitTicketPage} />
+        <Route path="/app/login" component={LoginPage} />
       </div>
     )
   }
