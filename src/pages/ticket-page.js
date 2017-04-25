@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Segment, Menu }  from 'semantic-ui-react';
+import TicketList from '../components/ticket-list';
 import { brand } from '../styles';
 
 class TicketPage extends Component {
@@ -8,7 +9,7 @@ class TicketPage extends Component {
       <Grid>
         <Grid.Column width={2} style={{paddingRight:0}}>
           <Segment secondary style={{height:'95vh'}}>
-            <p>Ticket List</p>
+            <TicketList/>
           </Segment>
         </Grid.Column>
         <Grid.Column width={14} style={{paddingLeft:0}}>
