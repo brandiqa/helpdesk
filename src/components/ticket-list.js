@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Menu, Segment, Icon, Dropdown }  from 'semantic-ui-react';
+import { Menu, Segment, Icon, Dropdown, Card }  from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
+import TicketCard from './ticket-card';
 
 const options = [
   {key:'all',value:'*',text:'All Tickets'},
@@ -22,7 +23,11 @@ class TicketList extends Component {
           </Menu.Item>
         </Menu>
         <Segment secondary style={{height:'95vh', marginTop:0}}>
-          <p>List of Ticket Cards</p>
+          <Card.Group>
+            <TicketCard />
+            <TicketCard selected={true}/>
+            <TicketCard/>
+          </Card.Group>
         </Segment>
       </div>
     );

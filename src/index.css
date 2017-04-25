@@ -39,3 +39,55 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
+
+/**
+** Cards Dark Styling
+**/
+
+.ui.dark.cards > .dark.card, .ui.dark.card {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0px;
+  background: #3e3e3e;
+  padding: 0em;
+  border: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 1px 3px 0px #3e3e3e, 0px 0px 0px 1px #3e3e3e;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  z-index: '';
+}
+
+.ui.dark.card {
+  background: #3e3e3e;
+}
+
+.ui.dark.cards > .dark.card > .content > a.header, .ui.dark.card > .content > a.header {
+  color: white;
+}
+
+.ui.cards > .card .meta, .ui.card .meta {
+  font-size: 1em;
+  color: #c4c4c4;
+}
+
+.ui.dark.cards > .dark.card > .content > .header, .ui.dark.card > .content > .header {
+  color: white;
+}
+
+.ui.dark.cards > .dark.card > .content > .description, .ui.dark.card > .content > .description {
+  clear: both;
+  color: white;
+}
+
+.ui.dark.cards > .dark.card > .content > a.header:hover, .ui.dark.card > .content > a.header:hover {
+  color: rgba(0, 0, 0, .8);
+}
+
+.ui.dark.cards > .dark.card > .extra,
+.ui.dark.card > .extra {
+  border-top: 1px solid #000 !important;
+  color: inherit;
+}
