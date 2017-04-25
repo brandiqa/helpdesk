@@ -8,9 +8,7 @@ class TicketPage extends Component {
     return (
       <Grid>
         <Grid.Column width={2} style={{paddingRight:0}}>
-          <Segment secondary style={{height:'95vh'}}>
-            <TicketList/>
-          </Segment>
+          <TicketList/>
         </Grid.Column>
         <Grid.Column width={14} style={{paddingLeft:0}}>
           <Grid divided>
