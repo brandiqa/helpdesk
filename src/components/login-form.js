@@ -43,9 +43,10 @@ class LoginForm extends Component {
 
   render() {
     const form = this.form;
+    const { isAuthenticated, loading } = authStore;
     const dashboard = { pathname: '/dashboard/tickets' };
 
-    if (authStore.isAuthenticated) {
+    if (isAuthenticated) {
       return (
         <Redirect to={dashboard}/>
       )
@@ -56,7 +57,7 @@ class LoginForm extends Component {
         <Header color={brand} as='h3'>
           <Icon name="lock"/>Sign in to your Account
         </Header>
-        <Form onSubmit={form.onSubmit}>
+        <Form onSubmit={form.onSubmit} loading={loading}>
           <InputField field={form.$('email')} />
           <InputField field={form.$('password')} />
           <Button color={primary} icon labelPosition="left">

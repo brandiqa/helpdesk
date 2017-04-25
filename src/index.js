@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
-import { observer } from 'mobx-react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import App from './App';
 import Dashboard from './Dashboard';
 import 'semantic-ui-css/semantic.min.css';
