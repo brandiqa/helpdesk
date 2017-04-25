@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Sidebar, Segment, Menu, Icon, Button, Input, Header } from 'semantic-ui-react'
+import TicketListMode from '../components/ticket-list-mode';
 
 class TicketsPage extends Component {
   render() {
@@ -44,8 +45,7 @@ class TicketsPage extends Component {
             </Menu.Menu>
           </Menu>
           <Segment basic padded>
-
-            <p>Tickets Dashboard</p>
+            <TicketListMode/>
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
