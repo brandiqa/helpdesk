@@ -40,6 +40,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.segment.right-inner-shadow {
+  box-shadow: inset -2px -3px 15px 0px rgba(0,0,0,0.16);
+}
+
 /**
 ** Cards Dark Styling
 **/
