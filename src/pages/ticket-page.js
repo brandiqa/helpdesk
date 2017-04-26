@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Segment, Menu }  from 'semantic-ui-react';
 import TicketCardList from '../components/ticket-card-list';
+import ContactDetail from '../components/contact-detail';
 import { brand } from '../styles';
 
 class TicketPage extends Component {
@@ -16,7 +17,7 @@ class TicketPage extends Component {
               <Menu inverted color={brand}>
               </Menu>
               <Segment basic style={{height:'88vh'}}>
-                <p>Contact Detail</p>
+                <ContactDetail/>
               </Segment>
             </Grid.Column>
             <Grid.Column width={13} style={{paddingLeft:0}}>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Item, Icon, Button, Label } from 'semantic-ui-react';
+import { Item, Icon, Label } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 class TicketItem extends Component {
@@ -14,9 +14,6 @@ class TicketItem extends Component {
             <NavLink className='ui right floated button orange' to='/dashboard/ticket'>
               View
             </NavLink>
-            {/* <Button floated='right' color='orange'>
-              View
-            </Button> */}
           </Item.Extra>
         </Item.Content>
       </Item>
