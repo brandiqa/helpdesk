@@ -50,6 +50,10 @@ footer a:hover {
   box-shadow: inset -2px -3px 15px 0px rgba(0,0,0,0.16);
 }
 
+.orange {
+  color: #F26202;
+}
+
 /**
 ** Cards Dark Styling
 **/

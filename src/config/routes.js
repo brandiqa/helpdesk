@@ -7,6 +7,6 @@ export const routes = {
   home: app,
   login: app + 'login',
   submit: app + 'submit',
-  tickets: dashboard + '/tickets',
-  ticket: dashboard + '/ticket'
+  tickets: dashboard + 'tickets',
+  ticket: dashboard + 'ticket'
 }

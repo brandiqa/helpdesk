@@ -7,10 +7,11 @@ class TicketsPage extends Component {
   render() {
     return(
       <Sidebar.Pushable as={Segment} style={{height:'95vh'}}>
-        <Sidebar as={Menu} width='thin' vertical inverted visible color='grey'>
+        <Sidebar as={Menu} width='thin' color='grey' animation='overlay' vertical inverted visible>
           <Segment basic style={{marginBottom:0, paddingBottom:'2px'}}>
             <Header as='h3' icon textAlign='center' inverted style={{marginBottom:0}}>
              <Icon name='user' circular/>
+             Admin
            </Header>
           </Segment>
           <Menu.Item active>
@@ -30,16 +31,13 @@ class TicketsPage extends Component {
                Closed Tickets
              </Menu.Item>
         </Sidebar>
-        <Sidebar.Pusher>
-          <Menu style={{width:"92vw"}} inverted color='teal'>
+        <Sidebar.Pusher style={{marginLeft:'150px'}}>
+          <Menu color='teal' inverted stackable>
             <Menu.Item header active><Icon name='laptop' /> HelpDesk</Menu.Item>
+            <Menu.Item >
+             <Input icon='search' placeholder='Search tickets...' />
+           </Menu.Item>
             <Menu.Menu position="right">
-              <Menu.Item>
-               <Input icon='search' placeholder='Search tickets...' />
-             </Menu.Item>
-              <Menu.Item>
-                Logged in as Admin
-              </Menu.Item>
               <Menu.Item>
                 <Button icon labelPosition='right' inverted onClick={() => authStore.logout()}>
                   <Icon name='sign out'/> Logout
