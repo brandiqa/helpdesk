@@ -14,7 +14,8 @@ class App extends Component {
     const item = "item " + brand;
     return (
       <div>
-        <Menu pointing style={{marginBottom:'0'}}>
+        {/* Primary Menu */}
+        <Menu pointing stackable style={{marginBottom:'0'}}>
           <Menu.Item header><Icon name={logo} /> HelpDesk</Menu.Item>
           <NavLink className={item} activeClassName="active" to={routes.home} exact>
             <Icon name='home' /> Home
@@ -26,6 +27,7 @@ class App extends Component {
             <Icon name='ticket' /> Submit Ticket
           </NavLink>
         </Menu>
+        {/* Banner */}
         <Segment color={brand} style={{marginTop: 0}} inverted>
           <Header as='h2' icon textAlign='center' size='huge'>
             <Icon name={logo} />
@@ -37,6 +39,7 @@ class App extends Component {
             </Header.Subheader>
           </Header>
         </Segment>
+        {/* Page Content */}
         <Route path={routes.home} component={HomePage} exact/>
         <Route path={routes.login} component={LoginPage} exact />
         <Route path={routes.submit} component={SubmitTicketPage} exact/>
