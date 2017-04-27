@@ -11,7 +11,7 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <Route path={routes.app} component={App} />
-      <Redirect from="/" to={routes.app}/>
+      <Redirect from="/" to={routes.app} />
       <Route path={routes.dashboard} component={Dashboard} />
     </div>
   </BrowserRouter>,
