@@ -5,6 +5,7 @@ import HomePage from './pages/home-page';
 import SubmitTicketPage from './pages/submit-ticket-page';
 import LoginPage from './pages/login-page';
 import { brand } from './styles';
+import { routes }  from './config/routes';
 const logo = 'laptop';
 
 class App extends Component {
@@ -15,13 +16,13 @@ class App extends Component {
       <div>
         <Menu pointing style={{marginBottom:'0'}}>
           <Menu.Item header><Icon name={logo} /> HelpDesk</Menu.Item>
-          <NavLink className={item} activeClassName="active" to="/app" exact>
+          <NavLink className={item} activeClassName="active" to={routes.home} exact>
             <Icon name='home' /> Home
           </NavLink>
-          <NavLink className={item} activeClassName="active" to="/app/login">
+          <NavLink className={item} activeClassName="active" to={routes.login}>
             <Icon name='user' /> Login
           </NavLink>
-          <NavLink className={item} activeClassName="active" to="/app/submit">
+          <NavLink className={item} activeClassName="active" to={routes.submit}>
             <Icon name='ticket' /> Submit Ticket
           </NavLink>
         </Menu>
@@ -36,9 +37,9 @@ class App extends Component {
             </Header.Subheader>
           </Header>
         </Segment>
-        <Route path="/app" component={HomePage} exact/>
-        <Route path="/app/submit" component={SubmitTicketPage} />
-        <Route path="/app/login" component={LoginPage} />
+        <Route path={routes.home} component={HomePage} exact/>
+        <Route path={routes.login} component={LoginPage} exact />
+        <Route path={routes.submit} component={SubmitTicketPage} exact/>
       </div>
     )
   }
