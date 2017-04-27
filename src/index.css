@@ -27,6 +27,11 @@
   text-align: center;
 }
 
+.centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 footer {
   background-color: #007e79 !important;
 }

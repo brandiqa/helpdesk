@@ -6,7 +6,7 @@ class LoginPage extends Component {
   render() {
     return (
       <Container>
-        <Segment compact padded style={{margin:'5vh auto 0 auto'}}>
+        <Segment compact padded className='centered' style={{marginTop:'5vh'}}>
           <LoginForm/>
         </Segment>
       </Container>
