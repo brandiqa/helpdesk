@@ -8,7 +8,7 @@ class HomePage extends Component {
     return (
       <div style={{marginTop:'4vh'}}>
         <Header textAlign='center'>Providing context-aware ticketing software to help support departments operate efficiently.</Header>
-        <Grid container style={{marginTop:'20px'}}>
+        <Grid container stackable style={{marginTop:'20px'}}>
           <Grid.Column width={6}>
             <Segment>
               <LoginForm/>
