@@ -7,20 +7,20 @@ import { brand } from '../styles';
 class TicketPage extends Component {
   render() {
     return (
-      <Grid>
-        <Grid.Column width={2} style={{paddingRight:0}}>
+      <Grid stackable>
+        <Grid.Column width={3} style={{paddingRight:0}}>
           <TicketCardList/>
         </Grid.Column>
-        <Grid.Column width={14} style={{paddingLeft:0}}>
-          <Grid divided>
-            <Grid.Column width={3} style={{paddingRight:0}}>
+        <Grid.Column width={13} style={{paddingLeft:0}}>
+          <Grid stackable divided>
+            <Grid.Column width={4} style={{paddingRight:0}}>
               <Menu inverted color={brand}>
               </Menu>
               <Segment basic style={{height:'88vh'}}>
                 <ContactDetail/>
               </Segment>
             </Grid.Column>
-            <Grid.Column width={13} style={{paddingLeft:0}}>
+            <Grid.Column width={12} style={{paddingLeft:0}}>
               <Menu inverted color={brand}>
                 <Menu.Item active>
                   Conversation

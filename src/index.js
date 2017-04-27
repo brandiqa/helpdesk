@@ -9,13 +9,11 @@ import './index.css';
 
 ReactDOM.render(
   <BrowserRouter>
-    <div>
       <Switch>
         <Route path={routes.app} component={App} />
         <Route path={routes.dashboard} component={Dashboard} />
         <Redirect from="/" to={routes.app} />
       </Switch>
-    </div>
   </BrowserRouter>,
   document.getElementById('root')
 );

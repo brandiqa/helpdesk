@@ -10,7 +10,7 @@ import { routes } from './config/routes';
 class Dashboard extends React.Component {
 
   privateRoutes = (
-    <div>
+    <div style={{height:'92vh'}}>
       <Route component={TicketsPage} path="/dashboard/tickets" />
       <Route component={TicketPage} path="/dashboard/ticket" />
     </div>
